@@ -1,0 +1,8 @@
+{
+  "name": "testnutriapp",
+  "app_id": "b7e11a38",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
