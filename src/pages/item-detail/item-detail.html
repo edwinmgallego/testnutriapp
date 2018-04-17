@@ -1,0 +1,35 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{ item.name }}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <div class="item-profile" text-center #profilePic [style.background-image]="'url(' + item.imagen + ')'">
+  </div>
+
+  <div class="item-detail" padding>
+    <h2>{{item.title.rendered}}</h2>
+    <p>{{item.datos.mm_producto_marca[0]}}</p>
+    <ion-grid>
+	  <ion-row>
+	    <ion-col class="features-title" col-6>Azucares (gr)</ion-col>
+	    <ion-col col-6 style="text-align:right;">{{item.datos.mm_producto_azucares}} </ion-col>
+	  </ion-row>
+	  <ion-row>
+	    <ion-col col-6>Calorias grasa</ion-col>
+	    <ion-col col-6 style="text-align:right;">{{item.datos.mm_producto_caloriasGrasa}}</ion-col>
+	  </ion-row>
+	  <ion-row>
+	    <ion-col col-12><button ion-button block color="ligth" (click)="doAlert(item)" >Calorias</button></ion-col>
+	  </ion-row>
+	  <ion-row>
+	  	<button (click)="openCompareItem(item)" ion-button>Comparar</button>
+	  	<button (click)="shareThisItem(item)" ion-button color="secondary">Compartir</button>
+	  </ion-row>	
+	</ion-grid>
+  </div>
+</ion-content>

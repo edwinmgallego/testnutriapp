@@ -1,0 +1,48 @@
+page-tutorial {
+  .toolbar-background {
+    background: transparent;
+    border-color: transparent;
+  }
+
+  .swiper-pagination-bullet-active{
+    background:#8DC63E;
+  }
+
+  .slide-zoom {
+    height: 100%;
+  }
+
+  .slide-title {
+    margin-top: -0.2rem;
+  }
+  .logo-intro{
+    max-width: 20%;
+  }
+
+  .slide-image {
+    height: auto;
+    max-width: 90%;
+    
+  }
+
+  button > span{
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  b {
+    font-weight: 500;
+  }
+
+  p {
+    padding: 0 40px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #60646B;
+
+    b {
+      color: #000000;
+    }
+  }
+
+}

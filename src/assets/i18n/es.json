@@ -1,0 +1,64 @@
+{
+
+  "BACK_BUTTON_TEXT": "Atrás",
+  "NAME": "Nombre",
+  "PASSWORD": "Contraseña",
+  "EMAIL": "Email",
+  "LOGIN": "Iniciar sesión",
+  "SIGNUP": "Registrarse",
+
+  "TAB1_TITLE": "Productos",
+  "TAB2_TITLE": "Buscar",
+  "TAB3_TITLE": "Sincronizar",
+
+  "TUTORIAL_SKIP_BUTTON": "Saltar",
+  "TUTORIAL_CONTINUE_BUTTON": "Empezar",
+
+  "MAP_TITLE": "Mapa",
+
+  "TUTORIAL_SLIDE1_TITLE": "Bienvenido a NutriApp",
+  "TUTORIAL_SLIDE1_DESCRIPTION": "NutriApp es una herramienta  para ayudarte a tener una correcta información nutricional sobre los alimentos que consumes diariamente.",
+
+  "TUTORIAL_SLIDE2_TITLE": "Usar NutriApp es muy fácil ",
+  "TUTORIAL_SLIDE2_DESCRIPTION": "Encontrarás una lista de alimentos con su tabla nutricional, también puede buscar alimentos en especial  y hacer comparaciones entre ellos.",
+
+  "TUTORIAL_SLIDE3_TITLE": "¿Necesitas ayuda?",
+  "TUTORIAL_SLIDE3_DESCRIPTION": "escríbenos a info@nutriapp.com.co",
+
+  "TUTORIAL_SLIDE4_TITLE": "Estás listo?",
+
+  "WELCOME_INTRO": "seguro disfrutarás NutriApp",
+
+  "SETTINGS_TITLE": "Sincronizar Productos",
+  "SETTINGS_OPTION1": "Opción 1",
+  "SETTINGS_OPTION2": "Opción 2",
+  "SETTINGS_OPTION3": "Opción 3",
+  "SETTINGS_OPTION4": "Opción 4",
+
+  "SETTINGS_PAGE_PROFILE": "Editar Perfil",
+
+  "WELCOME_TITLE": "Bienvenido/a",
+
+  "LOGIN_TITLE": "Iniciar sesión",
+  "LOGIN_ERROR": "No se ha podido iniciar sesión. Por favor revisa la información de la cuenta e inténtalo de nuevo.",
+  "LOGIN_BUTTON": "Iniciar sesión",
+  "SIGNUP_TITLE": "Registro",
+  "SIGNUP_ERROR": "No se ha podido crear la cuenta. Por favor revisa la información de la cuenta e inténtalo de nuevo.",
+  "SIGNUP_BUTTON": "Registrarse",
+
+  "LIST_MASTER_TITLE": "Productos",
+
+  "ITEM_CREATE_TITLE": "Nuevo Producto",
+  "ITEM_CREATE_CHOOSE_IMAGE": "Añadir Imagen",
+
+  "ITEM_NAME_PLACEHOLDER": "Nombre",
+  "ITEM_ABOUT_PLACEHOLDER": "Comentarios",
+
+  "CARDS_TITLE": "Social",
+
+  "SEARCH_TITLE": "Buscar",
+  "COMPARE_TITLE": "Comparar productos",
+
+  "SEARCH_PLACEHOLDER": "ejemplo pasta baja en grasa",
+  "PLACEHOLDER_COMPARE_SEARCH" : "Busca el producto a comparar"
+}

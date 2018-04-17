@@ -1,0 +1,77 @@
+<!--
+  Generated template for the ComparePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Comparar productos</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+	<ion-grid>
+		<ion-row>
+			 <div class="item-profile" text-center #profilePic [style.background-image]="'url(' + item.imagen + ')'">
+				  </div>
+
+				  <div class="item-detail" padding>
+				    <h2>{{item.title.rendered}}</h2>
+				    <p>{{item.datos.mm_producto_marca[0]}}</p>
+				    <ion-grid>
+					  <ion-row>
+					    <ion-col col-8>Azucares (gr)</ion-col>
+					    <ion-col col-8 style="text-align:right;">{{item.datos.mm_producto_azucares}} </ion-col>
+					  </ion-row>
+					  <ion-row>
+					    <ion-col col-8>Calorias grasa</ion-col>
+					    <ion-col col-8 style="text-align:right;">{{item.datos.mm_producto_caloriasGrasa}}</ion-col>
+					  </ion-row>
+					  <ion-row>
+					    <ion-col col-12><button ion-button block color="ligth" (click)="doAlert(item)" >Calorias</button></ion-col>
+					  </ion-row>
+					</ion-grid>
+				  </div>
+		</ion-row>
+	  	<ion-row>
+		  	<div id="buscar-comparar" *ngIf="item2 == undefined">
+				<ion-searchbar (ionInput)="getItems($event)" placeholder="Busca el producto a comparar"></ion-searchbar>
+			    <ion-list>
+				    <ion-item ion-item  *ngFor="let item of currentItems">
+				      <ion-avatar item-start>
+				        <img [src]="item.imagen" />
+				      </ion-avatar>
+				      <h2 *ngIf="item.title != undefined">{{item.title.rendered}}</h2>
+				      <p *ngIf="item.datos.mm_producto_marca != undefined">{{item.datos.mm_producto_marca[0]}}</p>
+				      <button (click)="openItemToCompare(item)" ion-button>Ver</button>
+				      <ion-note item-end *ngIf="item.note">{{item.note}}</ion-note>
+			    	</ion-item>
+			    </ion-list>
+			</div>
+			<div id="item-comparado" *ngIf="item2 != undefined">
+                <div class="item-profile" text-center #profilePic [style.background-image]="'url(' + item2.imagen + ')'"></div>
+ 			    <div class="item-detail" padding>
+				    <h2 *ngIf="item2.title != undefined">{{item2.title.rendered}}</h2>
+				    <p>{{item2.datos.mm_producto_marca[0]}}</p>
+				    <ion-grid>
+				        <ion-row>
+							<ion-col col-6>Azucares (gr)</ion-col>
+						    <ion-col col-6 style="text-align:right;">{{item2.datos.mm_producto_azucares}} </ion-col>
+					    </ion-row>
+						<ion-row>
+						    <ion-col col-6>Calorias grasa</ion-col>
+						    <ion-col col-6 style="text-align:right;">{{item2.datos.mm_producto_caloriasGrasa}}</ion-col>
+						</ion-row>
+						<ion-row>
+						    <ion-col col-12><button ion-button block color="ligth" (click)="doAlert(item2)" >Calorias</button></ion-col>
+						</ion-row>
+					</ion-grid>
+			    </div>
+			</div>
+		</ion-row>
+	</ion-grid>
+</ion-content>

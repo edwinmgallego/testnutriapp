@@ -1,0 +1,24 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{ 'SEARCH_TITLE' | translate }}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-searchbar (ionInput)="getItems($event)" placeholder="{{ 'SEARCH_PLACEHOLDER' | translate }}"></ion-searchbar>
+  <ion-list>
+    <ion-item ion-item  *ngFor="let item of currentItems">
+      <ion-avatar item-start>
+        <img [src]="item.imagen" />
+      </ion-avatar>
+      <h2>{{item.title.rendered}}</h2>
+      <p *ngIf="item.datos.mm_producto_marca">{{item.datos.mm_producto_marca[0]}}</p>
+      <button (click)="openCompareItem(item)" ion-button>Comparar</button>
+      <button (click)="openItem(item)" ion-button>Ver</button>
+      <ion-note item-end *ngIf="item.note">{{item.note}}</ion-note>
+    </ion-item>
+  </ion-list>
+</ion-content>
